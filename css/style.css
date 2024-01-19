@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .text-center {
     text-align: center;
 }
@@ -7,20 +12,14 @@
 }
 
 .welcome {
-    width: 100%;
-}
-
-.welcome img {
-    width: 100%;
-    height: auto;
-    display: block;
+    background-image: url("../images/drew-coffman.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 }
 
 .welcome div {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding-top: 300px;
     color: white;
 }
 
