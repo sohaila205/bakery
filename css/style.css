@@ -1,44 +1,98 @@
+/* general */
+
 * {
     margin: 0;
     box-sizing: border-box;
+    padding: 0;
+}
+
+h2 {
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 
 .text-center {
     text-align: center;
 }
 
-.text-left {
-    text-align: left;
+.clear-fix {
+    clear: both;
 }
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+
+/* nav */
+
+.nav {
+    background-color: rgba(233, 217, 217, 0.2);
+    z-index: 9999;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+.nav .nav-img {
+    float: left;
+}
+
+.nav .nav-img img {
+    width: 150px;
+    padding: 10px;
+}
+
+.home ul {
+    float: right;
+    list-style-type: none;
+}
+
+.home ul li {
+    float: left;
+    padding: 20px;
+}
+
+.home ul li a {
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+
+/* welcome */
 
 .welcome {
     background-image: url("../images/drew-coffman.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
+    overflow: auto;
 }
 
 .welcome div {
     padding-top: 300px;
     color: white;
+    background-color: rgba(0, 0, 0, .3);
+    height: 100%;
 }
 
-.product {
-    display: inline-block;
-    width: 30%;
+.welcome div h1 {
+    margin-bottom: 10px;
+    font-family: 'Alegreya', serif;
+    font-size: 80px;
 }
 
-.product img {
-    width: 90%;
+.welcome div p {
+    font-size: 24px;
 }
 
 .btn {
-    padding: 14px 28px;
-}
-
-.solidbtn {
-    background-color: rgb(121, 100, 7);
+    margin-top: 20px;
+    padding: 10px 15px;
+    color: white;
     border: none;
+    background-color: rgb(121, 100, 7);
 }
 
 .hover:hover {
@@ -47,55 +101,89 @@
 }
 
 .outerbtn {
-    border-style: solid;
     border-color: white;
-    color: white;
     border-style: solid;
-    border-width: 2px;
     background: transparent;
 }
 
-.flex {
-    display: flex;
-}
 
-.center {
-    align-items: center;
-    justify-content: center
-}
+/* who we */
 
-.sideimg {
+.leftside {
+    float: left;
     width: 40%;
-    padding: 3%;
+    margin: 30px;
 }
 
-.text {
+.leftside .sideimg {
+    width: 100%;
+}
+
+.rightside {
+    float: right;
     width: 40%;
+    margin: 30px;
 }
 
-.icon {
-    width: 10%;
+.who .item {
+    /* background-color: blue; */
+    width: 100%;
 }
+
+.who .item .left {
+    float: left;
+    width: 15%;
+}
+
+.who .item img {
+    width: 100%;
+}
+
+.who .item .right {
+    float: right;
+    width: 85%;
+    padding: 30px 0;
+}
+
+.who .center {
+    margin-top: 50px;
+}
+
+
+/* location */
 
 .location {
     background-color: antiquewhite;
 }
 
-.sideimg {
-    width: 40%;
-    padding: 3%;
+.location img {
+    width: 100%;
 }
 
-h2 {
-    font-family: "Lucida Console", "Courier New", monospace;
-    font-size: x-large;
+.location p {
+    margin: 20px;
 }
 
-p {
-    color: dimgrey;
+.location .center {
+    margin-top: 100px;
 }
 
-.welcome p {
-    font-size: larger;
-    color: aliceblue;
+
+/* baking */
+
+.product {
+    float: left;
+    width: 33.33333%;
+}
+
+.inner {
+    padding: 10px 15px;
+}
+
+.baking-content .product img {
+    width: 100%;
+}
+
+.baking {
+    margin: 20px;
 }
